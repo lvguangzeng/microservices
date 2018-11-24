@@ -1,0 +1,5 @@
+server:  port: 7001
+eureka:  instance:    prefer-ip-address: true  client:    serviceUrl:      defaultZone: http://eureka:123456@127.0.0.1:7000/eureka/
+spring:
+  application:
+    name: microservices-config-server  profiles:    active:    - git  security:    user:      name: config      password: 123456---spring:  profiles: native  cloud:    config:      server:        native:          search-locations:          - classpath:/---spring:  profiles: git  cloud:    config:      server:        git:          uri: https://github.com/lvguangzeng/microservices          default-label: master          search-paths:          - microservices-config-repo---spring:  profiles: defaultenv: default

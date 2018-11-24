@@ -1,0 +1,10 @@
+server:  port: 7000
+
+spring:
+  application:
+    name: microservices-eureka-server
+  security:    user:      name: eureka      password: 123456      
+eureka:  instance:    prefer-ip-address: true
+  client:    register-with-eureka: false
+    fetch-registry: false
+    service-url:      defaultZone: http://eureka:123456@127.0.0.1:7000/eureka
