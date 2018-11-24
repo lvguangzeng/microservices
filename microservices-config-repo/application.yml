@@ -1,1 +1,10 @@
+---
+spring:
+  profiles: default
+
+env: default
+---
+spring:
+  profiles: git
+
 env: git
