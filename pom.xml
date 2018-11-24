@@ -69,5 +69,6 @@
 		<module>microservices-eureka-server</module>
 		<module>microservices-config-server</module>
 		<module>microservices-gateway-server</module>
+		<module>microservices-user-server</module>
 	</modules>
 </project>
