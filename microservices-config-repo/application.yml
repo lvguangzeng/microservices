@@ -1,10 +1,10 @@
 ---
 spring:
-  profiles: default
+  profiles: default-online
 
 env: default
 ---
 spring:
-  profiles: git
+  profiles: git-online
 
 env: git
