@@ -2,9 +2,9 @@
 spring:
   profiles: default-online
 
-env: default
+env: default-githubb
 ---
 spring:
   profiles: git-online
 
-env: git
+env: git-github
