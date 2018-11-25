@@ -70,5 +70,7 @@
 		<module>microservices-config-server</module>
 		<module>microservices-gateway-server</module>
 		<module>microservices-user-server</module>
+		<module>microservices-feign</module>
+		<module>microservices-test</module>
 	</modules>
 </project>

@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>microservices-user-server</artifactId>
+	<artifactId>microservices-test</artifactId>
 	<packaging>jar</packaging>
 
-	<name>microservices-user-server</name>
+	<name>microservices-test</name>
 	<description></description>
 
 	<parent>
@@ -29,17 +29,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.lvguangzeng</groupId>
 			<artifactId>microservices-feign</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework.cloud</groupId>
-					<artifactId>spring-cloud-starter-openfeign</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 	</dependencies>
 
