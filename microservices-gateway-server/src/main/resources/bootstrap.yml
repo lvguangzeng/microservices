@@ -1,5 +1,5 @@
 server:  port: 7002
-eureka:  instance:    prefer-ip-address: true  client:    service-url:      defaultZone: http://eureka:123456@127.0.0.1:7000/eureka
+eureka:  instance:    prefer-ip-address: true  client:    service-url:      defaultZone: http://eureka:123456@127.0.0.1:7000/eurekamanagement:  endpoints:    web:      exposure:        include: '*'logging:  level:    org.springframework.cloud.gateway: debug
 spring:
   application:
     name: microservices-gateway-server  cloud:    config:      discovery:        enabled: true        service-id: microservices-config-server      username: config      password: 123456      label: master      name: application      profile: default    
