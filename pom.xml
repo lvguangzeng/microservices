@@ -9,7 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>micro-services</name>
+    <name>microservices</name>
     <description>micro services</description>
 
     <parent>
@@ -34,6 +34,7 @@
         <module>gateway-server</module>
         <module>user-server</module>
         <module>test</module>
+        <module>docker</module>
     </modules>
 
     <dependencies>
@@ -67,6 +68,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>microservices</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

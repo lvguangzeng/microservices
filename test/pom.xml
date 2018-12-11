@@ -31,7 +31,7 @@
         </dependency>
         <dependency>
             <groupId>com.lvguangzeng</groupId>
-            <artifactId>microservices-feign</artifactId>
+            <artifactId>feign-client</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
