@@ -1,0 +1,10 @@
+---
+spring:
+  profiles: default-online
+
+env: default-githubb
+---
+spring:
+  profiles: git-online
+
+env: git-github

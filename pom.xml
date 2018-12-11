@@ -24,7 +24,17 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
+		<docker.image.prefix>microservices</docker.image.prefix>
 	</properties>
+
+	<modules>
+		<module>microservices-eureka-server</module>
+		<module>microservices-config-server</module>
+		<module>microservices-gateway-server</module>
+		<module>microservices-user-server</module>
+		<module>microservices-feign</module>
+		<module>microservices-test</module>
+	</modules>
 
 	<dependencies>
 		<dependency>
@@ -62,15 +72,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.4.4</version>
+				<configuration>
+					<baseImage>openjdk:8-jdk-alpine</baseImage>
+					<repository>${docker.image.prefix}/${project.artifactId}</repository>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
-	<modules>
-		<module>microservices-eureka-server</module>
-		<module>microservices-config-server</module>
-		<module>microservices-gateway-server</module>
-		<module>microservices-user-server</module>
-		<module>microservices-feign</module>
-		<module>microservices-test</module>
-	</modules>
 </project>
